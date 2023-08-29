@@ -212,11 +212,13 @@ img {
   }
 
   .reviews__content {
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 18px;
     color: var(--color-text);
     line-height: 1.67;
     margin-bottom: 64px;
-    text-align: center;
   }
 
   .reviews__list {
@@ -265,6 +267,26 @@ img {
   .reviews {
     padding-top: 150px;
     padding-bottom: 150px;
+  }
+
+  .reviews__title::after {
+    right: 382px;
+    top: 28px;
+    width: 158px;
+    height: 20px;
+  }
+
+  .reviews__content {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .reviews__item {
+    width: calc((100% - 2*32px) / 3);
+  }
+
+  .reviews__list li:nth-child(3) {
+    display: block;
   }
 }
 
