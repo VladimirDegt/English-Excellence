@@ -1,0 +1,273 @@
+:root {
+  --color-green: #4DC274;
+  --color-text: rgba(18, 20, 23, 0.50);
+  --color-text-title: #121417;
+  --color-secondary-background: #F3F5F6;
+  --color-white: #ffffff;
+  --color-text-transparent: rgba(255, 255, 255, 0.50);
+  --color-pseudo-element: #BEE8CC;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-white);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  font-style: normal;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  color: currentColor;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  min-width: 320px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+}
+
+.reviews {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.reviews__title {
+  position: relative;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.13;
+  letter-spacing: -0.64px;
+  margin-bottom: 16px;
+  text-align: center;
+  color: var(--color-text-title);
+  z-index: 1;
+}
+
+.reviews__title::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 13px;
+  top: 25px;
+  width: 127px;
+  height: 12px;
+  border-radius: 8px;
+  background-color: var(--color-pseudo-element);
+  z-index: -1;
+}
+
+.reviews__content {
+  color: var(--color-text);
+  line-height: 1.13;
+  letter-spacing: -0.64px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.reviews__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.reviews__card {
+  height: 278px;
+  padding: 20px 20px 40px 20px;
+  border-radius: 16px;
+  background-color: var(--color-secondary-background);
+}
+
+.reviews__card-student {
+  display: flex;
+  padding: 14px;
+  gap: 8px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: var(--color-green);
+}
+
+.reviews__card-student-photo {
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.reviews__card-student-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.reviews__card-student-name {
+  color: var(--color-white);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  line-height: 24px;
+}
+
+.reviews__card-student-job {
+  color: var(--color-text-transparent);
+  font-size: 12px;
+  letter-spacing: -0.4px;
+  line-height: 16px;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    width: 335px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .reviews {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .reviews__title {
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+  }
+
+  .reviews__title::after {
+    right: 222px;
+    top: 28px;
+    width: 158px;
+    height: 20px;
+  }
+
+  .reviews__content {
+    font-size: 18px;
+    color: var(--color-text);
+    line-height: 1.67;
+    margin-bottom: 64px;
+    text-align: center;
+  }
+
+  .reviews__list {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .reviews__item {
+    width: calc((100% - 32px) / 2);
+  }
+
+  .reviews__list li:nth-child(3) {
+    display: none;
+  }
+
+  .reviews__card {
+    height: 326px;
+    padding: 32px 16px 40px 16px;
+    border-radius: 30px;
+    background-color: var(--color-secondary-background);
+  }
+
+  .reviews__card-student {
+    display: flex;
+    padding: 14px 14px 14px 16px;
+    gap: 8px;
+    margin-bottom: 32px;
+    border-radius: 15px;
+    background-color: var(--color-green);
+  }
+
+  .reviews__card-content {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding: 0 128px;
+  }
+
+  .reviews {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+}
+
+
+
+
