@@ -1,0 +1,39 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+
+@import url('./base/reset.css');
+@import url('./base/common.css');
+
+@import url('./layout/header.css');
+@import url('./layout/hero.css');
+@import url('./layout/styles-burger-mobile.css');
+@import url('./layout/leave-an-app.css');
+@import url('./layout/about-us.css');
+@import url('./layout/our-lessons.css');
+@import url('./layout/proposal-to-leave-app.css');
+@import url('./layout/our-techers.css');
+@import url('./layout/reviews.css');
+@import url('./layout/footer.css');
+@import url('./layout/created-by.css');
+
+:root {
+  /* COLORS */
+  --black: #121417;
+  --green: #4dc274;
+  --green-linear: linear-gradient(85deg, #4dc274 2.25%, #bee8cc 131.25%);
+  --light-green: #d4fde1;
+  --gray: #f3f5f6;
+  --white: #ffffff;
+  --focus-color: #38ae5f;
+  /* FONTS */
+  --primary-font: 'Manrope', sans-serif;
+  --accent-color: #bee8cc;
+  --transparent-black: rgba(18, 20, 23, 0.5);
+  --transparent-white: rgba(255, 255, 255, 0.7);
+  --transition-timing: 250ms;
+  --transition-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

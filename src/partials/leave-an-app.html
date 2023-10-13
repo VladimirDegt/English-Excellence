@@ -1,0 +1,136 @@
+<section class="application-form-section" id="leave-an-app">
+  <div class="container application-form-container">
+    <h2 class="application-form-title title">
+      Leave an <span class="title-underline">application</span>
+    </h2>
+
+    <p class="application-form-instruction">
+      Please use the form below to contact us. Enter your name, email, and
+      message and we'll get back to you shortly.
+    </p>
+
+    <div class="application-form-wrapper">
+      <div class="application-form-intro">
+        <img
+          srcset="./img/other/leave-an-application@2x.png 2x"
+          src="./img/other/leave-an-application.png"
+          alt="Student image"
+        />
+
+        <p class="application-form-intro-title">1000</p>
+        <p class="application-form-intro-text">
+          of our online English language lessons! This journey has been full of
+          discovery, growth and unforgettable moments, and we are happy to share
+          this joyful event with you.
+        </p>
+      </div>
+
+      <form class="form">
+        <div class="form-wrapper">
+          <label class="form-field"
+            ><input
+              type="text"
+              class="form-field-input"
+              name="user_name"
+              pattern="[a-z-A-Zа-яА-ЯіІїЇєЄґҐ]"
+              placeholder="Name"
+              required
+          /></label>
+
+          <label class="form-field"
+            ><input
+              type="email"
+              class="form-field-input"
+              name="user_email"
+              placeholder="Email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"
+              required
+          /></label>
+
+          <label class="form-field"
+            ><input
+              type="tel"
+              class="form-field-input"
+              name="user_phone"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              placeholder="Phone"
+              required
+          /></label>
+
+          <label class="form-comment">
+            <textarea
+              class="form-field-comment"
+              name="user_message"
+              placeholder="Comment"
+            ></textarea>
+          </label>
+
+          <fieldset class="form-choose-teacher">
+            <legend class="form-choose-teacher-title">Choose a teacher</legend>
+            <label class="form-choose-teacher-label-radio-btn">
+              <input
+                class="custom-radio-btn"
+                type="radio"
+                name="chose_teacher"
+                required
+                checked
+              />
+
+              <svg class="radio-btn-icon" width="20" height="20">
+                <use href="./img/icons.svg#radio-btn-icon"></use>
+              </svg>
+              Maria
+            </label>
+            <label class="form-choose-teacher-label-radio-btn">
+              <input
+                class="custom-radio-btn visually-hidden"
+                type="radio"
+                name="chose_teacher"
+              />
+
+              <svg class="radio-btn-icon" width="20" height="20">
+                <use href="./img/icons.svg#radio-btn-icon"></use>
+              </svg>
+              Artem
+            </label>
+            <label class="form-choose-teacher-label-radio-btn">
+              <input
+                class="custom-radio-btn visually-hidden"
+                type="radio"
+                name="chose_teacher"
+                required
+              />
+
+              <svg class="radio-btn-icon" width="20" height="20">
+                <use href="./img/icons.svg#radio-btn-icon"></use>
+              </svg>
+              Ilona
+            </label>
+            <label class="form-choose-teacher-label-radio-btn">
+              <input
+                class="custom-radio-btn visually-hidden"
+                type="radio"
+                name="chose_teacher"
+                required
+              />
+
+              <svg class="radio-btn-icon" width="20" height="20">
+                <use href="./img/icons.svg#radio-btn-icon"></use>
+              </svg>
+              Volodymyr
+            </label>
+          </fieldset>
+        </div>
+
+        <button class="form-submit-btn" type="submit">Send</button>
+
+        <p class="form-submit-policy">
+          By clicking on “Send” button, you agree to our
+          <a class="link form-submit-policy-link" href="">Privacy Policy</a
+          >,<br />and allow Promodo to use this information for marketing
+          purposes.
+        </p>
+      </form>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,192 @@
+.reviews {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.reviews__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.13;
+  letter-spacing: -0.64px;
+  margin-bottom: 16px;
+  text-align: center;
+  color: var(--black);
+  z-index: 1;
+}
+
+.title-underline {
+  position: relative;
+}
+
+.title-underline::after {
+  content: ' ';
+  position: absolute;
+  display: block;
+  z-index: -1;
+  top: 65%;
+  right: 0;
+  width: 100%;
+  height: 12px;
+  border-radius: 8px;
+  background: var(--accent-color);
+}
+
+.reviews__content {
+  color: var(--transparent-black);
+  line-height: 1.71;
+  letter-spacing: -0.64px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.reviews__card {
+  width: 100%;
+  height: auto;
+  padding: 20px 20px 40px 20px;
+  border-radius: 16px;
+  background-color: var(--gray);
+}
+
+.reviews__card-student {
+  display: flex;
+  padding: 14px;
+  gap: 8px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: var(--green);
+}
+
+.reviews__card-student-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.reviews__card-student-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.reviews__card-student-name {
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  line-height: 24px;
+}
+
+.reviews__card-student-job {
+  color: var(--transparent-white);
+  font-size: 12px;
+  letter-spacing: -0.4px;
+  line-height: 16px;
+}
+
+.reviews__card-content {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--transparent-black);
+}
+
+@media screen and (min-width: 375px) {
+  .reviews__title {
+    max-width: 283px;
+    margin: 0 auto;
+    padding-bottom: 16px;
+  }
+
+  .reviews__card {
+    width: 100%;
+  }
+
+  .reviews__content {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .reviews__title {
+    max-width: 100%;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+  }
+
+  .reviews__content {
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    color: var(--transparent-black);
+    line-height: 1.67;
+    margin-bottom: 64px;
+  }
+
+  .reviews__list {
+    display: flex;
+  }
+
+  .reviews__card {
+    width: 320px;
+    height: 326px;
+    padding: 32px 16px 40px 16px;
+    border-radius: 30px;
+    background-color: var(--gray);
+  }
+
+  .reviews__card-student {
+    display: flex;
+    padding: 14px 14px 14px 16px;
+    gap: 8px;
+    margin-bottom: 32px;
+    border-radius: 15px;
+    background-color: var(--green);
+  }
+
+  .reviews__card-content {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--transparent-black);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container.reviews-container {
+    width: 1280px;
+    padding: 0 128px;
+  }
+
+  .reviews {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+
+  .reviews__content {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* swiper */
+
+@media screen and (max-width: 1279px) {
+  .swiper-pagination {
+    position: static;
+    margin-top: 16px;
+  }
+
+  .swiper-pagination-bullet {
+    background: rgba(17, 17, 17, 0.5);
+    width: 13px;
+    height: 13px;
+    transition: width var(--transition-timing) var(--transition-function),
+      border-radius var(--transition-timing) var(--transition-function);
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: var(--green);
+    width: 28px;
+    border-radius: 8px;
+  }
+}

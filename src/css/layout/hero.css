@@ -1,0 +1,230 @@
+.hero-section {
+  display: flex;
+  margin: 0 16px;
+  margin-top: 88px;
+  flex-shrink: 0;
+  background-color: var(--black);
+  background-image: linear-gradient(
+      57deg,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url('../../img/hero-screans/hero-screan-phone.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 16px;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 425px 16px 14px;
+  max-width: 335px;
+}
+
+.hero-header {
+  color: var(--white);
+  font-size: 38px;
+  line-height: 1.05;
+  max-width: 295px;
+  margin-bottom: 40px;
+}
+
+.accent-color {
+  color: var(--accent-color);
+  text-transform: capitalize;
+}
+
+.cta-button {
+  display: flex;
+  padding: 14px 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 295px;
+  height: 52px;
+  border-radius: 12px;
+  background-color: var(--green);
+  margin-bottom: 20px;
+  transition: background-color var(--transition-timing)
+    var(--transition-function);
+}
+
+.link-to-app {
+  font-family: var(--primary-font);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.71;
+  padding: 17px 77px;
+}
+
+.arrow-link {
+  margin-left: auto;
+}
+
+.arrow-icon {
+  background-color: var(--white);
+  border-radius: 50%;
+  fill: var(--green);
+  transition: background-color var(--transition-timing)
+      var(--transition-function),
+    fill var(--transition-timing) var(--transition-function);
+}
+
+.hero-section {
+  max-width: 335px;
+  margin: 0 auto;
+  margin-top: 88px;
+}
+
+@media screen and (max-width: 375px) {
+  .hero-section {
+    min-width: 335px;
+    margin: 0 auto;
+    margin-top: 88px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .hero-section {
+    max-width: 704px;
+    margin: 0 auto;
+    margin-top: 112px;
+
+    border-radius: 30px;
+    background-image: linear-gradient(
+        57deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url('../../img/hero-screans/hero-screan-tablet.jpg');
+  }
+
+  .hero-container {
+    max-width: 704px;
+    padding: 260px 32px 32px;
+  }
+
+  .arrow-link,
+  .arrow-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .hero-header,
+  .cta-button {
+    margin-right: auto;
+  }
+
+  .hero-header {
+    font-size: 60px;
+    max-width: 488px;
+    font-weight: 700;
+    line-height: 1.16;
+  }
+
+  .cta-button {
+    max-width: 306px;
+    height: 60px;
+    margin-bottom: 215px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-section {
+    max-width: 1156px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 30px;
+    background-image: linear-gradient(
+        57deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url('../../img/hero-screans/hero-screan-descktop.jpg');
+  }
+
+  .container.hero-container {
+    margin: 0;
+    padding: 164px 32px 32px 64px;
+    max-width: 1280px;
+  }
+
+  .arrow-link,
+  .arrow-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .hero-header,
+  .cta-button {
+    margin-right: auto;
+  }
+
+  .hero-header {
+    font-size: 60px;
+    max-width: 564px;
+    font-weight: 700;
+    line-height: 1.16;
+    margin-bottom: 32px;
+  }
+
+  .cta-button {
+    max-width: 306px;
+    height: 60px;
+    margin-bottom: 83px;
+  }
+
+  .cta-button:hover,
+  .cta-button:focus {
+    background-color: var(--focus-color);
+  }
+
+  .arrow-link:hover > .arrow-icon,
+  .arrow-link:focus > .arrow-icon {
+    fill: var(--white);
+    background-color: var(--green);
+  }
+}
+
+@media screen and (max-width: 767px) and (min-resolution: 192dpi),
+  screen and (max-width: 767px) and (min-resolution: 2dppx),
+  screen and (max-width: 767px) and (min-device-pixel-ratio: 2) {
+  .hero-section {
+    background-image: linear-gradient(
+        57deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url('../../img/hero-screans/hero-screan-phone@2x.jpg');
+  }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx),
+  screen and (min-width: 768px) and (min-device-pixel-ratio: 2) {
+  .hero-section {
+    background-image: linear-gradient(
+        57deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url('../../img/hero-screans/hero-screan-tablet@2x.jpg');
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-resolution: 192dpi),
+  screen and (min-width: 1280px) and (min-resolution: 2dppx),
+  screen and (min-width: 1280px) and (min-device-pixel-ratio: 2) {
+  .hero-section {
+    background-image: linear-gradient(
+        57deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url('../../img/hero-screans/hero-screan-descktop@2x.jpg');
+  }
+}

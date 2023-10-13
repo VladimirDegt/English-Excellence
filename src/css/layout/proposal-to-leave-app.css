@@ -1,0 +1,312 @@
+.proposal_container {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 150px;
+  max-width: 335px;
+  background: var(--green-linear);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.proposal_cta {
+  font-family: var(--primary-font);
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--white);
+
+  display: block;
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 295px;
+
+  margin-bottom: 68px;
+}
+
+.cards {
+  position: relative;
+  height: 408px;
+  padding-bottom: 65px;
+  margin-bottom: 21px;
+}
+
+.card_back {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  width: 295px;
+  height: 408px;
+  border-radius: 16px;
+  transform: rotate(11deg);
+  transform-origin: center;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 3;
+}
+
+.card_mid {
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  width: 295px;
+  height: 408px;
+  border-radius: 16px;
+  transform: rotate(-9deg);
+  transform-origin: center;
+  background: var(--light-green);
+  z-index: 4;
+}
+
+.card_front {
+  position: relative;
+  background: var(--white);
+  z-index: 5;
+  width: 295px;
+  height: 408px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 16px;
+  padding: 40px 20px;
+}
+
+.proposal_title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.proposal_text {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  display: block;
+  margin-left: 8px;
+  max-width: 87%;
+}
+
+.proposal_list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.proposal_list_item {
+  display: flex;
+  align-items: center;
+}
+
+.proposal_button {
+  cursor: pointer;
+  background-color: var(--green);
+  max-width: 255px;
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-radius: 12px;
+  transition: background-color var(--transition-timing)
+    var(--transition-function);
+}
+
+.proposal_link {
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  padding: 17px 40px;
+}
+
+.proposal_books {
+  display: none;
+}
+
+.tick_icon {
+  display: block;
+  /* vertical-align: middle; */
+
+  width: 20px;
+  height: 20px;
+}
+/* ------------------- */
+@media screen and (max-width: 374px) {
+  .proposal_section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 80px 16px;
+  }
+
+  .proposal_container {
+    min-width: 303px;
+  }
+
+  .card_front,
+  .card_back,
+  .card_mid {
+    width: calc(100% - 20px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .proposal_container {
+    max-width: 704px;
+    padding-top: 64px;
+    padding-bottom: 94px;
+    border-radius: 30px;
+  }
+  .proposal_cta {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 84px;
+    margin-left: 32px;
+    max-width: 640px;
+  }
+  .cards {
+    height: 500px;
+    padding-bottom: 95px;
+  }
+  .card_back {
+    width: 668px;
+    height: 500px;
+    border-radius: 30px;
+    transform: rotate(-10.65deg);
+    transform-origin: center;
+    left: 20px;
+  }
+  .card_mid {
+    width: 668px;
+    height: 500px;
+    border-radius: 30px;
+    transform: rotate(11deg);
+    transform-origin: center;
+    top: 5px;
+  }
+  .card_front {
+    width: 668px;
+    height: 500px;
+    border-radius: 30px;
+    padding: 64px 20px;
+  }
+  .proposal_title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    margin-bottom: 32px;
+  }
+  .proposal_text {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    margin-left: 16px;
+    max-width: 65%;
+  }
+  .proposal_list {
+    margin-bottom: 32px;
+  }
+  .proposal_button {
+    max-width: 306px;
+  }
+  .proposal_link {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+  }
+  .proposal_books {
+    display: block;
+    position: absolute;
+    top: 170px;
+    left: 500px;
+  }
+  .tick_icon {
+    display: block;
+
+    width: 28px;
+    height: 28px;
+  }
+}
+/* __________________________
+*/
+@media screen and (min-width: 1280px) {
+  .proposal_container {
+    max-width: 1152px;
+    padding-bottom: 143px;
+  }
+  .proposal_cta {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 72px;
+    margin-left: 64px;
+    max-width: 776px;
+  }
+  .cards {
+    padding-bottom: 144px;
+    margin-bottom: 0px;
+  }
+  .card_back {
+    width: 1050px;
+    height: 463px;
+    top: 25px;
+    left: 38px;
+    transform: rotate(-8.65deg);
+  }
+  .card_mid {
+    width: 1011px;
+    height: 402px;
+    transform: rotate(11deg);
+    transform-origin: center;
+    top: 54px;
+    left: 62px;
+  }
+  .card_front {
+    width: 1024px;
+    height: 471px;
+    padding: 64px;
+  }
+  .proposal_title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  .proposal_list {
+    margin-bottom: 39px;
+  }
+  .proposal_books {
+    top: 145px;
+    left: 830px;
+  }
+  .tick_icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .proposal_list_item {
+    width: 937px;
+  }
+
+  .proposal_button:hover,
+  .proposal_button:focus {
+    background-color: var(--focus-color);
+  }
+}

@@ -1,0 +1,223 @@
+.lessons-container {
+  padding-top: 80px;
+}
+
+.lessons-title {
+  margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: var(--primary-font);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.13;
+  letter-spacing: -0.02em;
+}
+
+.title-underline {
+  position: relative;
+}
+
+.title-underline::after {
+  content: ' ';
+  position: absolute;
+  display: block;
+  z-index: -1;
+  top: 65%;
+  right: 0;
+  width: 100%;
+  height: 12px;
+  border-radius: 8px;
+  background: var(--accent-color);
+}
+
+.lessons-subtitle {
+  color: var(--transparent-black);
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+}
+
+.lessons-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+}
+
+.lessons-description {
+  color: var(--transparent-black);
+  text-align: center;
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  font-size: 14px;
+  padding: 40px 0 20px;
+}
+
+.lessons-item-title {
+  color: var(--black);
+  text-align: center;
+  font-family: var(--primary-font);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.4px;
+  margin-bottom: 16px;
+}
+
+.lessons-item-price {
+  color: var(--black);
+  text-align: center;
+  font-family: var(--primary-font);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.64px;
+}
+
+.lessons-button {
+  min-width: calc(100% - 40px);
+  display: flex;
+  padding: 14px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  height: 52px;
+  border-radius: 12px;
+  background-color: var(--green);
+  transition: background-color var(--transition-timing)
+    var(--transition-function);
+}
+
+.lessons-button:nth-child(even) {
+  border: 1px solid var(--white);
+}
+
+.button-text {
+  color: var(--white);
+  font-family: var(--primary-font);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.71;
+  padding: 17px 48px;
+}
+
+.lessons-button:hover,
+.lessons-button:focus {
+  background-color: var(--focus-color);
+}
+
+.lessons-item-border {
+  padding: 40px 20px;
+  border-radius: 16px;
+  background-color: var(--green);
+}
+
+.lessons-item-border:nth-child(odd) {
+  border: 1px solid var(--green);
+  background-color: var(--white);
+}
+
+.lessons-item-border:nth-child(even) > .lessons-item-title,
+.lessons-item-border:nth-child(even) > .lessons-item-price {
+  color: var(--white);
+}
+
+.lessons-item-border:nth-child(even) > .lessons-description {
+  color: var(--transparent-white);
+}
+
+@media screen and (max-width: 767px) {
+  .lessons-container {
+    padding-top: 100px;
+  }
+
+  .lessons-title {
+    font-size: 32px;
+    line-height: 1.12;
+    letter-spacing: -0.64px;
+    margin-bottom: 16px;
+  }
+
+  .lessons-subtitle {
+    max-width: 334px;
+    color: var(--transparent-black);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: var(--primary-font);
+    margin-bottom: 40px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+  }
+
+  .lessons-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .lessons-item-price {
+    line-height: 1.12;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .lessons-title {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+
+  .lessons-description {
+    font-size: 16px;
+    padding: 40px 11px 20px;
+  }
+
+  .lessons-subtitle {
+    max-width: 658px;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
+  .lessons-list {
+    flex-direction: row;
+    gap: 32px;
+    padding-top: 64px;
+  }
+
+  .lessons-item-border {
+    width: calc((100% - 32px) / 2);
+    margin-top: 0;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .lessons-description {
+    font-size: 16px;
+    padding: 40px 11px 20px;
+  }
+
+  .lessons-container {
+    padding-top: 150px;
+  }
+
+  .lessons-subtitle {
+    font-size: 18px;
+    padding: 0 137px;
+    margin: 0 auto;
+  }
+
+  .lessons-list {
+    padding: 64px 64px 0;
+    flex-wrap: nowrap;
+  }
+}

@@ -1,0 +1,65 @@
+body {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  line-height: 1.5;
+  font-style: normal;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+.anchor {
+  cursor: pointer;
+}
+
+header {
+  background-color: white;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@media screen and (max-width: 374px) {
+  .container {
+    min-width: 335px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 767.99px) {
+  .container {
+    width: 375px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279.99px) {
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding-left: 64px;
+    padding-right: 64px;
+    margin: 0 auto;
+  }
+}
