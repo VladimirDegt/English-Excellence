@@ -26,6 +26,6 @@
 
 ---
 
-![Desktop](./assets/Desktop.jpg)
+![Desktop](./assets/Desktop_2.jpg)
 
 ### Thank you for watching!
